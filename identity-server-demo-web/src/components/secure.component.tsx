@@ -43,7 +43,7 @@ export default function Secure(): ReactElement {
   };
 
   useEffect(() => {
-    getUser();
+    // getUser();
   }, []);
 
   return (

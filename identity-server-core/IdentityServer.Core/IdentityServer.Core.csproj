@@ -5,10 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
     <PackageReference Include="IdentityServer4" Version="4.1.1" />
+	 <!--package này dùng khi muốn kết hợp IdentityServer4 với AspNetIdentity-->
     <PackageReference Include="IdentityServer4.AspNetIdentity" Version="4.1.1" />
     <PackageReference Include="IdentityServer4.EntityFramework" Version="4.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.22" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.13" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.13">
       <PrivateAssets>all</PrivateAssets>

@@ -37,7 +37,8 @@ namespace IdentityServer.Core.Data
                 Scopes = new List<string>
                 {
                     "write",
-                    "read"
+                    "read",
+                    "abc"
                 }
             }
         };

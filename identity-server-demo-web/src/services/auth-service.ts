@@ -7,9 +7,9 @@ export class AuthService {
     const settings = {
       authority: 'https://localhost:5001/',
       client_id: 'identity-server-demo-web',
-      redirect_uri: 'http://localhost:3006/signin-callback.html',
+      redirect_uri: 'http://localhost:3001/signin-callback.html',
       monitorSession: false,
-      post_logout_redirect_uri: 'http://localhost:3006/',
+      post_logout_redirect_uri: 'http://localhost:3001/',
       response_type: 'code', // for Auth Code flow
       scope: 'read openid profile email',
       userStore: new WebStorageStateStore({ store: window.localStorage }) // set this to save user info in localStorage
@@ -21,6 +21,8 @@ export class AuthService {
   }
 
   public getUser(): Promise<User | null> {
+    console.log("ac");
+    
     return this.userManager.getUser();
   }
 

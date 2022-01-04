@@ -78,7 +78,7 @@ namespace IdentityServer.Demo.Api
                     builder =>
                     {
                         builder
-                        .WithOrigins("http://localhost:3006")
+                        .WithOrigins("http://localhost:3001")
                         .AllowAnyHeader()
                         .AllowAnyMethod()
                         .AllowCredentials();
